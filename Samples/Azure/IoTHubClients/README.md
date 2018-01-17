@@ -27,8 +27,8 @@ To complete the steps in this article, you need the following:
 
 - A Microsoft IoT Central application created from the Sample Devkits application template. For more information, see [Create your Microsoft IoT Central Application](https://docs.microsoft.com/en-us/microsoft-iot-central/howto-create-application).
 - A device running the Windows 10 IoT Core operating system.  For this walkthrough, we will use a Raspberry Pi.  
-- Visual Studio installed (only needed if you are going to be build/deploy the source code). 
-  - 'The Universal Windows Platform development' workload installed.
+- Visual Studio installed (only needed if you are going to build/deploy the source code). 
+  - With 'The Universal Windows Platform development' workload installed.
 
 ## Add a Real Device in Microsoft IoT Central
 
@@ -51,11 +51,11 @@ To setup a physical device, we need:
 
 To deploy the client application to your Windows IoT Device,
 
-- Ensure the connection string is stored on the device to the client application to use.
+- Ensure the connection string is stored on the device for the client application to use.
   - On the desktop, save the connection string in a text file named connection.string.iothub.
   - Copy the text file to the device’s document folder:
-     - <i>ip</i>\C$\Data\Users\DefaultAccount\Documents\connection.string.iothub
-- Go to the device web portal (in any browser, type http://<device ip>:8080) (This will allow you to manage many aspects of your Windows IoT device. The one we’ll need for this exercise is app installation).
+     - [device-ip-addres]\C$\Data\Users\DefaultAccount\Documents\connection.string.iothub
+- Go to the device web portal (in any browser, type http://[device-ip-address]:8080) (This will allow you to manage many aspects of your Windows IoT device. The feature we’ll need for this exercise is app installation).
   - On the left, expand the ‘Apps’ node.
   - Click ‘Quick-run samples’
   - Click ‘Azure IoT Hub Client’
@@ -67,7 +67,7 @@ The application should launch on the device, and will look something like this:
 
 <img src="IoTHubClientScreenshot.png"/>
 
-In your Microsoft IoT Central application, you can see how the code running on the Raspberry Pi interacts with the application:
+In Microsoft IoT Central, you can see how the code running on the Raspberry Pi interacts with the application:
 
 - On the Measurements page for your real device, you can see the telemetry.
 - On the Properties page, you can see the value of the reported Die Number property.
